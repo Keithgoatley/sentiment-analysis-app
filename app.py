@@ -1,24 +1,24 @@
 import gradio as gr
-from transformers import pipeline
+import joblib
 
-# Load HuggingFace sentiment analysis model
-sentiment_analyzer = pipeline('sentiment-analysis')
+# Load your trained sentiment analysis model
+model = joblib.load("sentiment_model.joblib")
+vectorizer = joblib.load("vectorizer.joblib")
 
-# Define the analysis function
-def analyze_sentiment(text):
-    result = sentiment_analyzer(text)
-    sentiment = result[0]['label']
-    confidence = result[0]['score']
-    return f"Sentiment: {sentiment}, Confidence: {confidence:.2f}"
+# Function for predicting sentiment
+def predict_sentiment(text):
+    vectorized_text = vectorizer.transform([text])
+    prediction = model.predict(vectorized_text)[0]
+    sentiment = "Positive 😊" if prediction == 1 else "Negative 😞"
+    return sentiment
 
-# Gradio interface setup
+# Create Gradio web interface
 interface = gr.Interface(
-    fn=analyze_sentiment,
-    inputs=gr.Textbox(lines=2, placeholder="Enter text here..."),
+    fn=predict_sentiment,
+    inputs=gr.Textbox(lines=2, placeholder="Enter your review here..."),
     outputs="text",
-    title="AI-powered Sentiment Analyzer",
-    description="Type any text and instantly see its sentiment."
+    title="Custom Sentiment Analyzer",
+    description="This app uses your own trained AI model to classify text sentiment."
 )
 
-# Launch app
 interface.launch()
