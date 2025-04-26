@@ -95,9 +95,11 @@ Both models are publicly available:
 
 Sentiment Model on Hugging Face
 
-🔗 Resources
-[GitHub Repository](https://github.com/goatley/sentiment-analysis-app)
-[Sentiment Model on Hugging Face](https://huggingface.co/goatley/sentiment-final-model)
+## 🔗 Resources
+
+- [GitHub Repository](https://github.com/goatley/sentiment-analysis-app)
+- [Sentiment Model on Hugging Face](https://huggingface.co/goatley/sentiment-final-model)
+
 
 🎯 Future Improvements
 Fine-tune emotion model on domain-specific datasets
@@ -108,7 +110,8 @@ Add explainable AI (XAI) visualizations (e.g., LIME/SHAP)
 
 Deploy dashboard to Hugging Face Spaces for public access
 
-📚 Author
-Keith Goatley
-[Hugging Face Profile](https://huggingface.co/goatley)
-[GitHub Profile](https://github.com/goatley)
+## 📚 Author
+
+Keith Goatley  
+- [Hugging Face Profile](https://huggingface.co/goatley)  
+- [GitHub Profile](https://github.com/goatley)
