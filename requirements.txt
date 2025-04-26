@@ -1,0 +1,7 @@
+streamlit
+transformers>=4.0.0
+datasets
+evaluate
+torch
+accelerate>=0.26.0
+huggingface_hub
