@@ -28,8 +28,5 @@ This project is an AI-driven sentiment analysis tool built with **Python**, **Tr
 4. Access via your browser at:  
 `http://127.0.0.1:7860`
 
-## 🖥️ Screenshot
-(Include a screenshot later by dragging and dropping after testing your app)
-
 ## 📖 Author
 - keith goatley
