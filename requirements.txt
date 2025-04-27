@@ -5,3 +5,17 @@ evaluate
 torch
 accelerate>=0.26.0
 huggingface_hub
+
+# plotting
+matplotlib>=3.0
+
+# keyword extraction
+yake>=0.4.8
+
+# topic modeling
+bertopic>=0.12.0
+scikit-learn>=1.0.0
+
+# semantic search
+sentence-transformers>=2.2.2
+faiss-cpu
