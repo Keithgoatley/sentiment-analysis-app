@@ -59,8 +59,8 @@ pip install -r requirements.txt
 
 Launch the dashboard:
 streamlit run dashboard.py --server.port=8501 --server.headless true
-
-Note: If you see
+Note:
+If you encounter:
 Port 8501 is already in use
 simply pick another port, for example:
 streamlit run dashboard.py --server.port=8502 --server.headless true
@@ -68,7 +68,7 @@ Then open your browser at http://localhost:8501 (or replace 8501 with your chose
 
 ---
 
-## 🗂 Quickstart Guide
+## 🗂 Project Structure
 
 sentiment-analysis-app/
 ├── dashboard.py
@@ -84,8 +84,12 @@ sentiment-analysis-app/
 ├── README.md
 └── logs/
 
-📊 Model Details
+---
+
+## 📊 Model Details
+
 Sentiment Model
+
 Base: distilbert-base-uncased
 
 Fine-tuned on Amazon review dataset (binary labels)
@@ -93,20 +97,27 @@ Fine-tuned on Amazon review dataset (binary labels)
 Achieved 85% test accuracy
 
 Emotion Model
+
 Base: distilbert-base-uncased
 
 Fine-tuned on GoEmotions dataset (multi-label)
 
 Predicts 27 emotions + neutral across real-world text
 
+Both models are publicly available on Hugging Face Hub.
+
+---
+
 🎯 Future Improvements
 Fine-tune emotion model on domain-specific datasets
 
 Integrate semantic topic modeling (e.g., BERTopic)
 
-Add explainable AI (XAI) visualizations (e.g., LIME/SHAP)
+Add explainable AI (XAI) visualizations (e.g., LIME, SHAP)
 
-Deploy dashboard to Hugging Face Spaces for public access
+Deploy dashboard to Hugging Face Spaces for public access.
+
+---
 
 📚 Author
 Keith Goatley
