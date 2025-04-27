@@ -1,6 +1,7 @@
-from datasets import load_dataset
-import pandas as pd
 import os
+
+import pandas as pd
+from datasets import load_dataset
 
 # Create a data/ directory if it doesn't exist
 os.makedirs("data", exist_ok=True)
