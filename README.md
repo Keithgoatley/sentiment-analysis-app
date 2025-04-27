@@ -66,6 +66,8 @@ simply pick another port, for example:
 streamlit run dashboard.py --server.port=8502 --server.headless true
 Then open your browser at http://localhost:8501 (or replace 8501 with your chosen port).
 
+---
+
 ## 🗂 Quickstart Guide
 
 sentiment-analysis-app/
