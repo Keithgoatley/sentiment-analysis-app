@@ -1,0 +1,15 @@
+# Ignore large folders
+models/
+data/
+logs/
+
+# Root data & model artifacts
+amazon_reviews.csv
+*.joblib
+
+# Python junk
+__pycache__/
+*.pyc
+
+# Environment files
+.env
