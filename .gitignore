@@ -14,3 +14,6 @@ __pycache__/
 
 # Streamlit cache
 .streamlit/
+
+# Drop all HuggingFace checkpoints & weights
+models/
