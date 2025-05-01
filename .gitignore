@@ -17,3 +17,4 @@ __pycache__/
 
 # Drop all HuggingFace checkpoints & weights
 models/
+venv/
