@@ -38,6 +38,11 @@ This project is an AI-driven sentiment analysis tool built with **Python**, **Tr
 # Author
 
     Keith Goatley
+
+# Licesnse
+
+   MIT License (C) 
+
   
 
 
