@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Install deps
+        run: |
+          pip install --upgrade pip
+          pip install black flake8 mypy pytest
+          pip install -r requirements.txt
+
+      - name: Check formatting
+        run: black --check .
+
+      - name: Lint
+        run: flake8 .
+
+      - name: Type check
+        run: mypy .
+
+      - name: Test
+        run: pytest --maxfail=1 --disable-warnings -q
