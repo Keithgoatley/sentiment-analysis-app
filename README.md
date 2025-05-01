@@ -2,34 +2,45 @@
 
 This project is an AI-driven sentiment analysis tool built with **Python**, **Transformers (HuggingFace)**, and **Gradio**. It classifies text as Positive, Negative, or Neutral.
 
-## 🔧 Technologies Used
-- Python
-- Gradio
-- HuggingFace Transformers
-- PyTorch
+## Installation
 
-## 🚀 How to Run the Application
-1. Clone this repository:
-    ```bash
-    git clone https://github.com/<your_username>/sentiment-analysis-app.git
-    cd sentiment-analysis-app
-    ```
+1. Clone the repo  
+   
+   git clone https://github.com/Keithgoatley/sentiment-analysis-app.git
+   cd sentiment-analysis-app
 
-2. Install dependencies:
-    ```bash
-    pip install transformers torch gradio
-    ```
+2. Create & activate a virtual environment
 
-3. Run the app:
-    ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+
+3. Install dependencies
+
+   pip install -r requirements.txt
+
+# Technologies Used
+
+    Python
+    Gradio
+    HuggingFace Transformers
+    PyTorch
+
+# Run Applications
+    
     python app.py
-    ```
 
-4. Access via your browser at:  
-`http://127.0.0.1:7860`
+    Then open your browser at http://127.0.0.1:7860 to interact with the UI. 
 
-## 🖥️ Screenshot
-(Include a screenshot later by dragging and dropping after testing your app)
+# Screenshot
 
-## 📖 Author
-- keith goatley
+ <img width="1566" alt="image" src="https://github.com/user-attachments/assets/a9b37cb1-5967-458b-8d86-9125931f6cbd" />
+
+# Author
+
+    Keith Goatley
+  
+
+
+
+
+    
