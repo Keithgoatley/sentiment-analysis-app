@@ -25,7 +25,7 @@ This project is an AI-driven sentiment analysis tool built with **Python**, **Tr
     HuggingFace Transformers
     PyTorch
 
-# Run Applications
+# Run Application
     
     python app.py
 
