@@ -1,15 +1,16 @@
-# Ignore large folders
-models/
-data/
+# Logs & cache
 logs/
+*.log
 
-# Root data & model artifacts
-amazon_reviews.csv
-*.joblib
-
-# Python junk
+# Python bytecode
 __pycache__/
-*.pyc
+*.py[cod]
 
 # Environment files
 .env
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Streamlit cache
+.streamlit/
